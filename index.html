@@ -4,93 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillBridge</title>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/png">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">SkillBridge</div>
+            <div class="navbar-logo">
+                <img src="assets/images/logo.jpg" alt="SkillBridge Logo">
+                <span>SkillBridge</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#courses">Cursos</a></li>
-                <li><a href="#about">Nosotros</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                <li><a href="#login">Login</a></li>
+                <li><a href="#home"><i class="fas fa-home" ></i> Inicio</a></li>
+                <li><a href="#about"><i class="fas fa-users" ></i> Nosotros</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope" ></i> Contacto</a></li>
+                <li><a href="#login"><i class="fas fa-sign-in-alt" ></i> Login</a></li>
             </ul>
         </nav>
+    
+        <section id="home" class="hero">
+            <img src="assets/images/image1.jpg" alt="Fondo de SkillBridge" class="hero-image">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Impulsa tu futuro con SkillBridge</h1>
+                <p>Domina el inglés con nuestros cursos especializados y alcanza tus metas profesionales y personales.</p>
+                <a href="#courses" class="cta">
+                    <i class="fas fa-arrow-right" style="color: #fff;"></i> Descubre Nuestros Cursos
+                </a>
+            </div>
+        </section>
     </header>
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Bienvenido a SkillBridge</h1>
-            <p>Impulsa tu futuro aprendiendo inglés con nuestros cursos especializados.</p>
-        </div>
-        <div class="hero-image">
-            <img src="assets/images/image1.jpg" alt="Aprende Inglés" />
-        </div>
-        <a href="#courses" class="cta">Ver Cursos</a>
 
+    <!-- Método de enseñanza -->
+    <section id="method" class="method">
+        <h2>Método de Enseñanza</h2>
+        <p>Nuestro método modular está diseñado para adaptarse a todos los tipos de cursos, desde principiantes hasta niveles avanzados. Ajustamos la intensidad y el enfoque según las necesidades específicas de cada estudiante y curso.</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon" style="background-color: #FFC107;">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Fundamentos del idioma</h3>
+                    <p>Introducción a la estructura del idioma, vocabulario esencial y habilidades básicas de comunicación. Ideal para establecer una base sólida.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon" style="background-color: #FF5722;">
+                    <i class="fas fa-headphones-alt"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Comprensión y práctica auditiva</h3>
+                    <p>Enfoque en mejorar la capacidad de escuchar y entender conversaciones reales a través de audios y actividades dinámicas.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon" style="background-color: #4CAF50;">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Comunicación oral y escrita</h3>
+                    <p>Práctica intensiva en habilidades de expresión oral y escrita, adaptada al contexto del curso (negocios, viajes o exámenes).</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon" style="background-color: #2196F3;">
+                    <i class="fas fa-clipboard-check"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Simulaciones y preparación avanzada</h3>
+                    <p>Escenarios prácticos como simulaciones de entrevistas, reuniones de trabajo o exámenes internacionales, ajustados al nivel del curso.</p>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Cursos -->
     <section id="courses" class="courses">
         <h2>Nuestros Cursos</h2>
+        
         <div class="course">
-            <img src="assets/images/image2.jpg" alt="Curso Básico" />
             <div class="course-content">
-                <h3>Curso Básico</h3>
+                <h3><i class="fas fa-chalkboard" style="color: #4CAF50;"></i> Curso Básico</h3>
                 <p>Aprende las bases del idioma inglés y empieza a comunicarte.</p>
-                <a href="#" class="btn">Saber Más</a>
+                <a href="#" class="btn"><i class="fas fa-info-circle" style="color: #2196F3;"></i> Conoce Más</a>
+            </div>
+            <div class="course-image">
+                <img src="assets/images/image2.jpg" alt="Curso Básico">
+                <span class="badge" style="background-color: #4CAF50;"><i class="fas fa-star" style="color: #fff;"></i> Principiantes</span>
             </div>
         </div>
+        
         <div class="course">
-            <img src="assets/images/image3.jpg" alt="Curso Intermedio" />
             <div class="course-content">
-                <h3>Curso Intermedio</h3>
-                <p>Refuerza tus conocimientos y mejora tus habilidades lingüísticas.</p>
-                <a href="#" class="btn">Saber Más</a>
+                <h3><i class="fas fa-user-graduate" style="color: #FF5722;"></i> Curso Intermedio</h3>
+                <p>Refuerza tus conocimientos y desarrolla tus habilidades para comunicarte de forma más fluida.</p>
+                <a href="#" class="btn"><i class="fas fa-info-circle" style="color: #2196F3;"></i> Conoce Más</a>
+            </div>
+            <div class="course-image">
+                <img src="assets/images/image3.jpg" alt="Curso Intermedio">
+                <span class="badge" style="background-color: #FF5722;"><i class="fas fa-chart-line" style="color: #fff;"></i> Nivel Medio</span>
             </div>
         </div>
+        
         <div class="course">
-            <img src="assets/images/image4.jpg" alt="Preparación TOEFL" />
             <div class="course-content">
-                <h3>Preparación para TOEFL</h3>
-                <p>Prepárate para alcanzar el éxito en el examen TOEFL.</p>
-                <a href="#" class="btn">Saber Más</a>
+                <h3><i class="fas fa-graduation-cap" style="color: #9C27B0;"></i> Preparación para TOEFL</h3>
+                <p>Prepárate para alcanzar el éxito en el examen TOEFL y abre nuevas oportunidades académicas y laborales.</p>
+                <a href="#" class="btn"><i class="fas fa-info-circle" style="color: #2196F3;"></i> Conoce Más</a>
+            </div>
+            <div class="course-image">
+                <img src="assets/images/image4.jpg" alt="Preparación TOEFL">
+                <span class="badge" style="background-color: #9C27B0;"><i class="fas fa-medal" style="color: #fff;"></i> Avanzado</span>
             </div>
         </div>
     </section>
+    
+
+    <!-- Contacto -->
+    <section id="contact" class="contact">
+        <h2>Contáctanos</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Nombre:</label>
+                        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone"><i class="fas fa-phone"></i> Teléfono:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono">
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-alt"></i> Mensaje:</label>
+                        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    </div>
+                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
+                </form>
+                
+            </div>
+            <div class="contact-map">
+                <h3>Visítanos</h3><br>
+                <p>Calle Ejemplo 123, Colonia Centro, Puebla, México</p><br>
+                <a href="https://www.google.com/maps/place/19.0413,-98.2062" target="_blank" class="btn">Abrir en Google Maps</a><br><br><br>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.7534389752!2d-98.2062!3d19.0413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc0ff7d38c79d%3A0x85d759d8e4143b1f!2sCalle+Ejemplo%2C+Centro%2C+Puebla%2C+México!5e0!3m2!1ses!2smx!4v1619876543210"
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proximamente -->
+    <section id="upcoming" class="upcoming">
+        <h2>Próximamente...</h2>
+        <!-- <div class="carousel-container">
+            <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <img src="assets/images/course1.jpg" alt="Curso de Inglés para Negocios">
+                    <h3><i class="fas fa-briefcase"></i> Inglés para Negocios</h3>
+                    <p>Mejora tus habilidades comunicativas en el entorno empresarial.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/course2.jpg" alt="Curso de Inglés Conversacional">
+                    <h3><i class="fas fa-comments"></i> Inglés Conversacional</h3>
+                    <p>Gana fluidez y confianza en conversaciones diarias.</p>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/course3.jpg" alt="Curso de Inglés para Viajes">
+                    <h3><i class="fas fa-plane"></i> Inglés para Viajes</h3>
+                    <p>Prepárate para comunicarte eficazmente durante tus viajes.</p>
+                </div>
+            </div>
+            <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+        </div> -->
+    </section>
+    
+
     <footer>
         <div class="footer-container">
+            <!-- Sección Sobre -->
             <div class="footer-section about">
                 <h3>Sobre SkillBridge</h3>
-                <p>
-                    SkillBridge es una plataforma educativa enfocada en ofrecer cursos de inglés 
-                    de alta calidad. Nuestro objetivo es ayudar a los estudiantes a alcanzar sus metas 
-                    académicas y profesionales a través del aprendizaje del idioma inglés.
-                </p>
+                <p>SkillBridge es una plataforma educativa enfocada en ofrecer cursos de inglés de alta calidad.</p>
             </div>
-            <div class="footer-section contact">
+    
+            <!-- Sección Contacto -->
+            <div class="footer-section contact1">
                 <h3>Contacto</h3>
                 <p>Teléfono: +52 789782342</p>
                 <p>Email: contacto@skillbridge.com</p>
             </div>
+    
+            <!-- Sección Ubicación -->
             <div class="footer-section location">
                 <h3>Ubicación</h3>
-                <p>Calle  </p>
+                <p>Calle Ejemplo 123, Colonia Centro</p>
                 <p>Puebla, México</p>
             </div>
+    
+            <!-- Sección Redes Sociales -->
             <div class="footer-section social">
                 <h3>Síguenos</h3>
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#" style="color: #3b5998;"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#" style="color: #E1306C;"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#" style="color: #0077b5;"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+
                 </ul>
+            </div>
+            
+    
+            <!-- Logo en el footer -->
+            <div class="footer-logo">
+                <img src="assets/images/logo.jpg" alt="SkillBridge Logo">
             </div>
         </div>
         <div class="footer-bottom">
             <p>&copy; 2025 SkillBridge. Todos los derechos reservados.</p>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>
