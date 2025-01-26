@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SkillBridge</title>
-    <link rel="icon" href="assets/images/logo.jpg" type="image/png">
-
+    <link rel="icon" href="assets/images/logo1.png" type="image/png">
+    <!-- Enlaces a Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Slab:wght@700&family=Montserrat:wght@700&family=Lato:wght@900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -13,22 +14,28 @@
     <header>
         <nav class="navbar">
             <div class="navbar-logo">
-                <img src="assets/images/logo.jpg" alt="SkillBridge Logo">
+                <img src="assets/images/logo1.png" alt="SkillBridge Logo">
                 <span>SkillBridge</span>
             </div>
             <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home" ></i> Inicio</a></li>
-                <li><a href="#about"><i class="fas fa-users" ></i> Nosotros</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope" ></i> Contacto</a></li>
-                <li><a href="#login"><i class="fas fa-sign-in-alt" ></i> Login</a></li>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#home-school">Home School</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     
         <section id="home" class="hero">
             <img src="assets/images/image1.jpg" alt="Fondo de SkillBridge" class="hero-image">
             <div class="hero-overlay"></div>
             <div class="hero-content">
-                <h1>Impulsa tu futuro con SkillBridge</h1>
+                <h1>Impulsa tu futuro con educación de calidad</h1>
                 <p>Domina el inglés con nuestros cursos especializados y alcanza tus metas profesionales y personales.</p>
                 <a href="#courses" class="cta">
                     <i class="fas fa-arrow-right" style="color: #fff;"></i> Descubre Nuestros Cursos
@@ -37,98 +44,163 @@
         </section>
     </header>
 
-    <!-- Método de enseñanza -->
-    <section id="method" class="method">
-        <h2>Método de Enseñanza</h2>
-        <p>
-            Nuestro método modular está diseñado para adaptarse a todos los tipos de cursos, ofreciendo 
-            <b>clases presenciales</b> en grupos reducidos para maximizar la atención personalizada. 
-            La intensidad se ajusta según las necesidades específicas de cada nivel.
-        </p>
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-icon" style="background-color: #FFC107;">
-                    <i class="fas fa-book-open"></i>
+    <!-- Cursos -->
+    <section id="courses" class="courses">
+        <h2>Nuestros Cursos</h2>
+        <div class="course-section">
+            <!-- Curso TOEFL -->
+            <div class="course-row">
+                <div class="course-image">
+                    <img src="assets/images/image4.jpg" alt="Preparación para TOEFL">
                 </div>
-                <div class="timeline-content">
-                    <h3>Fundamentos del Idioma</h3>
-                    <p>Introducción a la estructura del idioma, vocabulario esencial y habilidades básicas de comunicación. Ideal para establecer una base sólida.</p>
-                    <span class="highlight">Clases Presenciales</span>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-icon" style="background-color: #FF5722;">
-                    <i class="fas fa-headphones-alt"></i>
-                </div>
-                <div class="timeline-content">
-                    <h3>Comprensión Auditiva</h3>
-                    <p>Enfoque en mejorar la capacidad de escuchar y entender conversaciones reales a través de audios y actividades dinámicas.</p>
-                    <span class="highlight">Grupos Reducidos</span>
+                <div class="course-info">
+                    <h3 style="color: #1E90FF;">Preparación para TOEFL</h3>
+                    <p>Prepárate para destacar en el examen TOEFL con simulaciones prácticas, asesoría personalizada y estrategias efectivas.</p>
+                    <div class="course-details">
+                        <p><i class="fas fa-check-circle" style="color: #1E90FF;"></i> Práctica intensiva</p>
+                        <p><i class="fas fa-check-circle" style="color: #1E90FF;"></i> Simulaciones de examen</p>
+                        <p><i class="fas fa-check-circle" style="color: #1E90FF;"></i> Resultados garantizados</p>
+                        <p><strong>Duración:</strong> 2 meses (8 semanas)</p>
+                        <p><strong>Horas por semana:</strong> 4</p>
+                        <p><strong>Inicio:</strong> Próximo grupo comienza el <span style="color: #1E497A;">01 de Marzo</span>.</p>
+                        <a href="#" class="btn" style="background-color: #1E90FF;">Más Información</a>
+                    </div>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-icon" style="background-color: #4CAF50;">
-                    <i class="fas fa-pencil-alt"></i> <!-- Cambiado el icono -->
+    
+            <!-- Curso Básico -->
+            <div class="course-row reverse">
+                <div class="course-image">
+                    <img src="assets/images/image2.jpg" alt="Curso Básico">
                 </div>
-                <div class="timeline-content">
-                    <h3>Comunicación Oral y Escrita</h3>
-                    <p>Práctica intensiva en habilidades de expresión oral y escrita, adaptada al contexto del curso (negocios, viajes o exámenes).</p>
-                    <span class="highlight">Método Interactivo</span>
+                <div class="course-info">
+                    <h3 style="color: #4CAF50;">Curso Básico</h3>
+                    <p>Domina los fundamentos del idioma inglés, aprende gramática esencial, vocabulario práctico y habilidades básicas de comunicación.</p>
+                    <div class="course-details">
+                        <p><i class="fas fa-check-circle" style="color: #4CAF50;"></i> Ideal para principiantes</p>
+                        <p><i class="fas fa-check-circle" style="color: #4CAF50;"></i> 100% Clases presenciales</p>
+                        <p><i class="fas fa-check-circle" style="color: #4CAF50;"></i> Acceso a materiales exclusivos</p>
+                        <!-- <p><strong>Duración:</strong> 3 meses (12 semanas)</p>
+                        <p><strong>Horas por semana:</strong> 5</p> -->
+                        <p class="highlight" style="color: #4CAF50;">Próximamente...</p>
+                    </div>
                 </div>
             </div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon" style="background-color: #2196F3;">
-                    <i class="fas fa-clipboard-check"></i>
+    
+            <!-- Curso Intermedio -->
+            <div class="course-row">
+                <div class="course-image">
+                    <img src="assets/images/image3.jpg" alt="Curso Intermedio">
                 </div>
-                <div class="timeline-content">
-                    <h3>Simulaciones Prácticas</h3>
-                    <p>Escenarios reales como simulaciones de entrevistas, reuniones de trabajo o exámenes internacionales, ajustados al nivel del curso.</p>
-                    <span class="highlight">Resultados Garantizados</span>
+                <div class="course-info">
+                    <h3 style="color: #FF5722;">Curso Intermedio</h3>
+                    <p>Refuerza tu conocimiento y desarrolla habilidades de comunicación fluida en inglés con ejercicios avanzados.</p>
+                    <div class="course-details">
+                        <p><i class="fas fa-check-circle" style="color: #FF5722;"></i> Nivel intermedio</p>
+                        <p><i class="fas fa-check-circle" style="color: #FF5722;"></i> Grupos reducidos</p>
+                        <p><i class="fas fa-check-circle" style="color: #FF5722;"></i> Actividades dinámicas</p>
+                        <!-- <p><strong>Duración:</strong> 4 meses (16 semanas)</p>
+                        <p><strong>Horas por semana:</strong> 6</p> -->
+                        <p class="highlight" style="color: #FF5722;">Próximamente...</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
 
-    <!-- Cursos -->
-    <section id="courses" class="courses">
-        <h2>Nuestros Cursos</h2>
-        <div class="courses-container">
-            <div class="course-card">
-                <div class="course-card-front">
-                    <i class="fas fa-chalkboard" style="color: #4CAF50; font-size: 3rem;"></i>
-                    <h3>Curso Básico</h3>
-                    <p>Aprende las bases del idioma inglés y empieza a comunicarte.</p>
+    <!-- ¿Por qué elegirnos? sección -->
+    <section id="why-us" class="why-us">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="why-us-container">
+            <!-- Progreso Garantizado -->
+            <div class="why-us-item">
+                <div class="icon-container">
+                    <img src="assets/gifts/gif1.gif" alt="Progreso Garantizado" class="why-us-icon gif-progreso">
                 </div>
-                <div class="course-card-back" style="background-color: #4CAF50;">
-                    <h3>Principiantes</h3>
-                    <p>¡Ideal para quienes están comenzando!</p>
-                    <a href="#" class="btn">Conoce Más</a>
+                <h3 class="title-progreso">Progreso Garantizado</h3>
+                <p>Avanza rápidamente en el idioma con nuestro enfoque personalizado y técnicas innovadoras.</p>
+            </div>
+    
+            <!-- Ambiente Amigable -->
+            <div class="why-us-item">
+                <div class="icon-container">
+                    <img src="assets/gifts/gif2.gif" alt="Ambiente Amigable" class="why-us-icon gif-ambiente">
+                </div>
+                <h3 class="title-amigable">Ambiente Amigable</h3>
+                <p>Un entorno positivo que fomenta la confianza y el aprendizaje relajado.</p>
+            </div>
+    
+            <!-- Metodología Dinámica -->
+            <div class="why-us-item">
+                <div class="icon-container">
+                    <img src="assets/gifts/gif3.gif" alt="Metodología Dinámica" class="why-us-icon gif-metodologia">
+                </div>
+                <h3 class="title-metodologia">Metodología Dinámica</h3>
+                <p>Actividades interactivas diseñadas para mantenerte motivado y comprometido.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método de enseñanza -->
+    <section id="method" class="method">
+        <div class="method-header">
+            <h2>¿Qué nos hace diferentes?</h2>
+            <p>En SkillBridge te ofrecemos una experiencia única de aprendizaje con ventajas que nos destacan de otras escuelas.</p>
+        </div>
+        <div class="method-content">
+            <div class="method-feature">
+                <div class="icon" style="background-color: #4CAF50;">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="text">
+                    <h3>Clases Presenciales</h3>
+                    <p>Conexión real con profesores y compañeros en un entorno 100% presencial e interactivo.</p>
                 </div>
             </div>
-            <div class="course-card">
-                <div class="course-card-front">
-                    <i class="fas fa-user-graduate" style="color: #FF5722; font-size: 3rem;"></i>
-                    <h3>Curso Intermedio</h3>
-                    <p>Desarrolla habilidades para comunicarte de forma fluida.</p>
+            <div class="method-feature">
+                <div class="icon" style="background-color: #FF9800;">
+                    <i class="fas fa-clock"></i>
                 </div>
-                <div class="course-card-back" style="background-color: #FF5722;">
-                    <h3>Nivel Medio</h3>
-                    <p>¡Avanza tus conocimientos!</p>
-                    <a href="#" class="btn">Conoce Más</a>
+                <div class="text">
+                    <h3>Horarios Flexibles</h3>
+                    <p>Clases adaptadas a tu horario: mañana, tarde o noche. ¡Aprender nunca fue tan fácil!</p>
                 </div>
             </div>
-            <div class="course-card">
-                <div class="course-card-front">
-                    <i class="fas fa-graduation-cap" style="color: #9C27B0; font-size: 3rem;"></i>
-                    <h3>Preparación para TOEFL</h3>
-                    <p>Prepárate para el éxito en el examen TOEFL.</p>
+            <div class="method-feature">
+                <div class="icon" style="background-color: #3F51B5;">
+                    <i class="fas fa-user-check"></i>
                 </div>
-                <div class="course-card-back" style="background-color: #9C27B0;">
-                    <h3>Avanzado</h3>
-                    <p>¡Asegura tu lugar en universidades internacionales!</p>
-                    <a href="#" class="btn">Conoce Más</a>
+                <div class="text">
+                    <h3>Profesores Certificados</h3>
+                    <p>Impartidas por profesionales certificados en la enseñanza del idioma inglés.</p>
+                </div>
+            </div>
+            <div class="method-feature">
+                <div class="icon" style="background-color: #FF5722;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="text">
+                    <h3>Grupos Reducidos</h3>
+                    <p>Clases con pocos estudiantes para garantizar una atención personalizada.</p>
+                </div>
+            </div>
+            <div class="method-feature">
+                <div class="icon" style="background-color: #FFC107;">
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="text">
+                    <h3>Clases Sabatinas</h3>
+                    <p>Diseñadas para quienes tienen semanas ocupadas. ¡Ideal para ti!</p>
+                </div>
+            </div>
+            <div class="method-feature">
+                <div class="icon" style="background-color: #009688;">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="text">
+                    <h3>Material Exclusivo</h3>
+                    <p>Acceso a contenido didáctico diseñado exclusivamente para maximizar tu aprendizaje.</p>
                 </div>
             </div>
         </div>
@@ -137,119 +209,120 @@
     
 
     <!-- Proximamente -->
-    <section id="upcoming" class="upcoming">
-        <h2>Próximamente...</h2>
-        
-    </section>
-
     <section id="promotion" class="promotion">
-        
+        <div class="promotion-header">
+            <h2>
+                <span class="icon">
+                    <i class="fas fa-bullhorn"></i>
+                </span>
+                Próximamente...
+            </h2>
+        </div>
+        <div class="promotion-banner">
+            <h1><i class="fas fa-graduation-cap"></i> Curso Intensivo para TOEFL</h1>
+            <p>Alcanza tus metas con nuestra preparación especializada.</p>
+        </div>
+    
         <div class="promotion-card">
-            <div class="promotion-header">
-                <h2>Curso Preparación TOEFL</h2>
-                <img src="assets/images/logo.jpg" alt="SkillBridge Logo">
-            </div>
             <div class="promotion-content">
-                <ul>
-                    <li><i class="fas fa-check-circle"></i> Clases PRESENCIALES</li>
-                    <li><i class="fas fa-check-circle"></i> Sabatino Intensivo</li>
-                    <li><i class="fas fa-check-circle"></i> Inicio 1 de Marzo 2025</li>
-                </ul>
                 <div class="promotion-image">
-                    <img src="assets/images/image3.jpg" alt="Estudiantes en clases">
+                    <img src="assets/images/image3.jpg" alt="Clase TOEFL">
+                </div>
+                <div class="promotion-details">
+                    <h2>Detalles del Curso</h2>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Clases PRESENCIALES</li>
+                        <li><i class="fas fa-check-circle"></i> Sabatino Intensivo</li>
+                        <li><i class="fas fa-check-circle"></i> Inicio: <strong>1 de Marzo 2025</strong></li>
+                    </ul>
+                    <p><strong>Duración:</strong> 2 meses</p>
+                    <p><strong>Inscripción:</strong> $2500 MXN por mes</p>
+                    <a href="tel:2211865562" class="cta-button"><i class="fas fa-phone-alt"></i> Inscríbete Ahora</a>
                 </div>
             </div>
             <div class="promotion-footer">
-                <p><strong>Inscríbete con un anticipo:</strong> $2500 MXN por mes</p>
-                <p><strong>Duración total:</strong> 2 meses</p>
-                <a href="tel:2211865562" class="cta-button"><i class="fas fa-phone-alt"></i> Contáctanos: 221 186 5562</a>
+                <p><i class="fas fa-exclamation-circle"></i> Cupo limitado, asegura tu lugar hoy.</p>
             </div>
         </div>
     </section>
+    
 
     <!-- Contacto -->
     <section id="contact" class="contact">
         <h2>Contáctanos</h2>
-        <div class="contact-container">
-            <div class="contact-form">
-                <h3>Envíanos un mensaje</h3>
-                <form action="#">
-                    <div class="form-group">
-                        <label for="name"><i class="fas fa-user"></i> Nombre:</label>
-                        <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
-                        <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone"><i class="fas fa-phone"></i> Teléfono:</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Ingresa tu número de teléfono">
-                    </div>
-                    <div class="form-group">
-                        <label for="message"><i class="fas fa-comment-alt"></i> Mensaje:</label>
-                        <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
-                    </div>
-                    <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Enviar Mensaje</button>
-                </form>
-                
+        <div class="contact-wrapper">
+            <div class="contact-details">
+                <h3>Estamos aquí para ti</h3>
+                <p>Si tienes dudas o quieres más información, no dudes en ponerte en contacto con nosotros:</p>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span><a href="mailto:info@skillbridge.com">info@skillbridge.com</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span><a href="tel:+522211865562">+52 221 186 5562</a></span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Carr. Federal Puebla - Atlixco 6503, Santa Fe, 72825 San Bernardino Tlaxcalancingo, Pue.</span>
+                </div>
+                <div class="social-media">
+                    <h4>Síguenos:</h4>
+                    <a href="https://www.instagram.com/skillbridgeacademy" target="_blank">
+                        <i class="fab fa-instagram"></i> Instagram
+                    </a>
+                </div>
             </div>
-            <div class="contact-map">
-                <h3>Visítanos</h3><br>
-                <p>Carr. Federal Puebla - Atlixco 6503, Santa Fe, 72825 San Bernardino Tlaxcalancingo, Pue.</p><br>
-                <a href="https://www.google.com/maps/place/19.0413,-98.2062" target="_blank" class="btn">Abrir en Google Maps</a><br><br><br>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.0239442495624!2d-98.25488731350113!3d19.015500802874957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77002091cd1%3A0x69a80a2082bdd34f!2sCarr.%20Federal%20Puebla%20-%20Atlixco%206503%2C%20Santa%20Fe%2C%2072825%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1737838566381!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.0239442495624!2d-98.25488731350113!3d19.015500802874957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77002091cd1%3A0x69a80a2082bdd34f!2sCarr.%20Federal%20Puebla%20-%20Atlixco%206503%2C%20Santa%20Fe%2C%2072825%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1737838566381!5m2!1ses-419!2smx" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
-
     
-
-
+    <!-- Pie de página -->
     <footer>
         <div class="footer-container">
-            <!-- Sección Sobre -->
-            <div class="footer-section about">
-                <h3>Sobre SkillBridge</h3>
-                <p>SkillBridge es una plataforma educativa enfocada en ofrecer cursos de inglés de alta calidad.</p>
-            </div>
-    
-            <!-- Sección Contacto -->
-            <div class="footer-section contact1">
-                <h3>Contacto</h3>
-                <p>Teléfono: +52 789782342</p>
-                <p>Email: contacto@skillbridge.com</p>
-            </div>
-    
-            <!-- Sección Ubicación -->
-            <div class="footer-section location">
-                <h3>Ubicación</h3>
-                <p>Calle Ejemplo 123, Colonia Centro</p>
-                <p>Puebla, México</p>
-            </div>
-    
-            <!-- Sección Redes Sociales -->
-            <div class="footer-section social">
-                <h3>Síguenos</h3>
-                <ul class="social-links-vertical">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                </ul>
-                
-            </div>
-            
-    
-            <!-- Logo en el footer -->
+            <!-- Sección Logo -->
             <div class="footer-logo">
-                <img src="assets/images/logo.jpg" alt="SkillBridge Logo">
+                <img src="assets/images/logo1.png" alt="SkillBridge Logo">
+                <p>Plataforma educativa enfocada en ofrecer cursos de inglés de alta calidad.</p>
+            </div>
+    
+            <!-- Sección Información -->
+            <div class="footer-info">
+                <h3>Información de Contacto</h3>
+                <ul>
+                    <li><i class="fas fa-phone-alt"></i> <a href="tel:+522211865562">+52 221 186 5562</a></li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:contacto@skillbridge.com">contacto@skillbridge.com</a></li>
+                    <li><i class="fas fa-map-marker-alt"></i> Carr. Federal Puebla - Atlixco 6503, Santa Fe, 72825 San Bernardino Tlaxcalancingo, Pue.</li>
+                </ul>
+            </div>
+    
+            <!-- Sección Síguenos -->
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="https://www.instagram.com/skillbridgeacademy.mx/?utm_source=ig_web_button_share_sheet" target="_blank">
+                    <i class="fab fa-instagram instagram-icon"></i> Instagram
+                </a>
             </div>
         </div>
+    
+        <!-- Pie de página -->
         <div class="footer-bottom">
             <p>&copy; 2025 SkillBridge. Todos los derechos reservados.</p>
         </div>
     </footer>
     
+    
+    
     <script src="js/script.js"></script>
+
 </body>
 </html>

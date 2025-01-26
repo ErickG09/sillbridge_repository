@@ -1,34 +1,8 @@
-
-
-const menuToggle = document.querySelector('.menu-toggle');
+const hamburger = document.querySelector('.hamburger');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-    menuToggle.classList.toggle('open');
+// Alternar visibilidad del menú y estado del ícono
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
-
-
-// const carousel = document.querySelector('.carousel');
-// const prevBtn = document.querySelector('.carousel-btn.prev');
-// const nextBtn = document.querySelector('.carousel-btn.next');
-
-// let scrollAmount = 0;
-
-// // Botón de navegación izquierda
-// prevBtn.addEventListener('click', () => {
-//     carousel.scrollBy({
-//         left: -300, // Ajusta el desplazamiento
-//         behavior: 'smooth',
-//     });
-// });
-
-// // Botón de navegación derecha
-// nextBtn.addEventListener('click', () => {
-//     carousel.scrollBy({
-//         left: 300, // Ajusta el desplazamiento
-//         behavior: 'smooth',
-//     });
-// });
-
-
