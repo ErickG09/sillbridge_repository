@@ -1,12 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SkillBridge - Plataforma Educativa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/platformStyles.css">
 </head>
 <body>
-    <h1>hola</h1>
-    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/images/logo1.png" alt="SkillBridge Logo" class="logo">
+            <h2>SkillBridge</h2>
+        </div>
+        <nav class="menu">
+            <a href="#" class="menu-item active">Inicio</a>
+            <a href="#" class="menu-item">Módulo 1: Introducción</a>
+            <a href="#" class="menu-item">Módulo 2: Vocabulario</a>
+            <a href="#" class="menu-item">Módulo 3: Gramática</a>
+            <a href="#" class="menu-item">Módulo 4: Listening</a>
+            <a href="#" class="menu-item">Módulo 5: Speaking</a>
+            <a href="#" class="menu-item">Módulo 6: TOEFL Prep</a>
+        </nav>
+        <footer class="sidebar-footer">
+            <a href="#" class="logout-button">Cerrar Sesión</a>
+        </footer>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="user-info">
+                <p>Hola, <span>Juan Pérez</span></p>
+            </div>
+        </header>
+
+        <!-- Progress Section -->
+        <section class="progress-section">
+            <h2>Progreso General</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 45%;"></div>
+            </div>
+            <p>45% Completado</p>
+        </section>
+
+        <!-- Modules Section -->
+        <section class="modules">
+            <h2>Módulos Disponibles</h2>
+            <div class="module-grid">
+                <div class="module">
+                    <h3>Módulo 1: Introducción</h3>
+                    <p>Conoce las bases del inglés y los conceptos esenciales.</p>
+                    <button class="module-button">Iniciar</button>
+                </div>
+                <div class="module locked">
+                    <h3>Módulo 2: Vocabulario</h3>
+                    <p>Enriquece tu vocabulario básico e intermedio.</p>
+                    <button class="module-button" disabled>Bloqueado</button>
+                </div>
+                <div class="module locked">
+                    <h3>Módulo 3: Gramática</h3>
+                    <p>Aprende las reglas gramaticales y su correcta aplicación.</p>
+                    <button class="module-button" disabled>Bloqueado</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Section -->
+        <section class="activities">
+            <h2>Actividades</h2>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <h3>Actividad 1: Quiz de vocabulario</h3>
+                    <p>Prueba tus conocimientos básicos de vocabulario.</p>
+                    <button class="activity-button" onclick="window.location.href='activities/actividad1.html'">Responder</button>
+                </div>
+                <div class="activity-card">
+                    <h3>Actividad 2: Singular y Plural</h3>
+                    <p>Repasa las formas correctas de singular y plural.</p>
+                    <button class="activity-button" onclick="window.location.href='activities/actividad2.html'">Responder</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Additional Section -->
+        <section class="additional-section">
+            <h2>Recursos Adicionales</h2>
+            <ul>
+                <li><a href="#">Glosario de vocabulario</a></li>
+                <li><a href="#">Reglas de gramática</a></li>
+                <li><a href="#">Consejos para el listening</a></li>
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
