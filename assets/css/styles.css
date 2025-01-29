@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Estilos globales */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
@@ -20,7 +20,6 @@ body {
 }
 
 /* Navbar */
-/* Navbar General */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -185,11 +184,6 @@ body {
 }
 
 
-
-
-
-
-
 /* Hero Section */
 .hero {
     position: relative;
@@ -239,111 +233,174 @@ body {
 }
 
 .hero .cta {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background-color: #1e497a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(90deg, #007BFF, #0056b3); /* Degradado moderno */
     color: #fff;
+    font-size: 1.3rem;
+    font-weight: bold;
     text-decoration: none;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Sombra sutil */
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Efecto hover */
 .hero .cta:hover {
-    background-color: #163a5e;
+    background: linear-gradient(90deg, #0056b3, #003b73);
+    box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
+    transform: scale(1.05);
 }
+
+/* Ícono dentro del botón */
+.hero .cta i {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Animación de ícono al pasar el mouse */
+.hero .cta:hover i {
+    transform: translateX(5px);
+}
+
 
 /* Cursos */
-.courses {
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;
-}
 
 .courses h2 {
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: 2.5rem; /* Manteniendo el tamaño */
+    text-align: center; /* Centrado */
+    color: #003B73; /* Azul oscuro profesional */
+    font-weight: bold;
     margin-bottom: 2rem;
-    color: #1E497A;
+    position: relative;
+    letter-spacing: 1px; /* Espaciado sutil */
+}
+
+/* Línea decorativa debajo del título */
+.courses h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #007BFF; /* Azul más vibrante */
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
+
+
+/* ======== CONTENEDOR GENERAL ======== */
+.courses {
+    background-color: #f9f9f9;
 }
 
 .course-section {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
 }
 
-/* Filas */
+/* ======== CADA FILA DE CURSO ======== */
 .course-row {
     display: flex;
-    align-items: center;
-    gap: 2rem;
-    padding: 1.5rem 0;
-    /* border-bottom: 1px solid #ddd; */
+    align-items: stretch;
+    width: 100%;
+    height: 450px; /* Tamaño uniforme */
+    overflow: hidden;
 }
 
-.course-row.reverse {
-    flex-direction: row-reverse;
+/* Alternar colores de fondo */
+.course-row.toefl {
+    background-color: #E3F2FD; /* Azul claro */
 }
 
-/* Imagen */
+.course-row.basic {
+    background-color: #E8F5E9; /* Verde claro */
+}
+
+.course-row.intermediate {
+    background-color: #FFF3E0; /* Beige/naranja claro */
+}
+
+/* ======== IMÁGENES EN LOS COSTADOS ======== */
 .course-image {
-    flex: 0 0 40%;
+    flex: 0 0 50%;
+    height: 100%;
 }
 
 .course-image img {
     width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    height: 100%;
+    object-fit: cover;
 }
 
-.course-image img:hover {
-    transform: scale(1.05);
-}
-
-/* Información */
+/* ======== INFORMACIÓN DEL CURSO ======== */
 .course-info {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 4%;
+    border-radius: 10px;
 }
 
+/* TÍTULOS DE LOS CURSOS */
 .course-info h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-}
-
-.course-info p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.course-details p {
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-.course-details .highlight {
-    font-size: 1.2rem;
     font-weight: bold;
 }
 
-/* Botón */
+/* LISTA DE BENEFICIOS */
+.course-details {
+    margin-top: 1rem;
+}
+
+.course-details p {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ICONOS */
+.course-details i {
+    font-size: 1.2rem;
+}
+
+/* BOTONES */
 .course-info .btn {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.5rem;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-align: center;
 }
 
 .course-info .btn:hover {
     transform: scale(1.05);
 }
 
+/* COLORES DEL BOTÓN */
+.course-info .btn.toefl {
+    background-color: #1E90FF;
+}
 
+.course-info .btn.basic {
+    background-color: #4CAF50;
+}
 
+.course-info .btn.intermediate {
+    background-color: #FF5722;
+}
 
 
 
@@ -440,8 +497,6 @@ body {
     margin: 0; /* Evita márgenes adicionales */
 }
 
-
-/* Contact Section */
 /* Contact Section */
 .contact {
     padding: 4rem 2rem;
@@ -822,8 +877,10 @@ footer {
     color: #0077b5; /* Azul de LinkedIn */
 }
 
-/* Sección Promoción */
-/* Estilo para el título Próximamente */
+/* Sección Promociones*/
+/* Curso Toefl */
+
+/* Estilos generales para todas las secciones de promoción */
 .promotion-header {
     text-align: center;
     margin-bottom: 2rem;
@@ -831,7 +888,6 @@ footer {
 
 .promotion-header h2 {
     font-size: 2.5rem;
-    color: #003B73;
     font-weight: bold;
     display: inline-flex;
     align-items: center;
@@ -852,28 +908,9 @@ footer {
     }
 }
 
-/* Otros estilos (idénticos a los anteriores) */
 .promotion {
     padding: 3rem 1rem;
     background: #f9f9f9;
-}
-
-.promotion-banner {
-    text-align: center;
-    padding: 2rem 0;
-    background: linear-gradient(90deg, #003B73, #007BFF);
-    color: #fff;
-    border-radius: 10px;
-}
-
-.promotion-banner h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.promotion-banner p {
-    font-size: 1.2rem;
-    margin: 0;
 }
 
 .promotion-card {
@@ -901,7 +938,6 @@ footer {
 
 .promotion-details h2 {
     font-size: 1.8rem;
-    color: #003B73;
     margin-bottom: 1rem;
 }
 
@@ -915,19 +951,16 @@ footer {
     display: flex;
     align-items: center;
     margin-bottom: 0.5rem;
-    color: #333;
     font-size: 1rem;
 }
 
 .promotion-details ul li i {
-    color: #007BFF;
     margin-right: 0.5rem;
 }
 
 .cta-button {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #FF5733;
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
@@ -936,20 +969,297 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-.cta-button:hover {
-    background-color: #E74C3C;
-}
-
 .promotion-footer {
     text-align: center;
     margin-top: 2rem;
-    background: #003B73;
-    color: #fff;
     padding: 1rem;
     border-radius: 10px;
 }
 
+/* Estilos específicos para cada curso */
+
+/* Curso TOEFL (Azul) */
+.promotion-toefl .promotion-banner {
+    background: linear-gradient(90deg, #003B73, #007BFF);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.promotion-toefl .promotion-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.promotion-toefl .promotion-details h2 {
+    color: #003B73;
+}
+
+.promotion-toefl .promotion-details ul li i {
+    color: #007BFF;
+}
+
+.promotion-toefl .cta-button {
+    background-color: #007BFF;
+}
+
+.promotion-toefl .cta-button:hover {
+    background-color: #0056b3;
+}
+
+.promotion-toefl .promotion-footer {
+    background: #003B73;
+    color: #fff;
+}
+
+/* Curso Básico (Verde) */
+.promotion-basic .promotion-banner {
+    background: linear-gradient(90deg, #1E5631, #28A745);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.promotion-basic .promotion-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.promotion-basic .promotion-details h2 {
+    color: #1E5631;
+}
+
+.promotion-basic .promotion-details ul li i {
+    color: #28A745;
+}
+
+.promotion-basic .cta-button {
+    background-color: #28A745;
+}
+
+.promotion-basic .cta-button:hover {
+    background-color: #1E7D34;
+}
+
+.promotion-basic .promotion-footer {
+    background: #1E5631;
+    color: #fff;
+}
+
+/* Curso Intermedio (Naranja) */
+.promotion-intermediate .promotion-banner {
+    background: linear-gradient(90deg, #D35400, #FF5733);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+    border-radius: 10px;
+}
+
+.promotion-intermediate .promotion-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.promotion-intermediate .promotion-details h2 {
+    color: #D35400;
+}
+
+.promotion-intermediate .promotion-details ul li i {
+    color: #FF5733;
+}
+
+.promotion-intermediate .cta-button {
+    background-color: #FF5733;
+}
+
+.promotion-intermediate .cta-button:hover {
+    background-color: #E74C3C;
+}
+
+.promotion-intermediate .promotion-footer {
+    background: #D35400;
+    color: #fff;
+}
 
 
 
+/* ======= SECCIÓN PRINCIPAL ======= */
+.testimonials {
+    padding: 5rem 2rem;
+    background: linear-gradient(to bottom, #E3F2FD, #E1E9F7);
+    text-align: center;
+    position: relative;
+}
 
+/* ======= TÍTULO ======= */
+.testimonials h2 {
+    font-size: 3rem;
+    color: #003b73;
+    margin-bottom: 2.5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    position: relative;
+}
+
+/* ======= CONTENEDOR DEL CARRUSEL ======= */
+.testimonial-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 850px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+/* ======= SLIDER ======= */
+.testimonial-slider {
+    position: relative;
+    width: 100%;
+    min-height: 250px;
+}
+
+/* ======= SLIDES ======= */
+.testimonial-slide {
+    width: 100%;
+    max-width: 750px;
+    min-height: 250px;
+    margin: auto;
+    display: none;
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-slide:first-child {
+    display: block;
+    opacity: 1;
+}
+
+/* ======= SLIDE ACTIVO (CON DESVANECIDO) ======= */
+.testimonial-slide.active {
+    opacity: 1;
+    visibility: visible;
+    z-index: 2;
+}
+
+/* ======= CONTENIDO DEL TESTIMONIO ======= */
+.testimonial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ======= ICONO DE CITA ======= */
+.quote-icon {
+    font-size: 3rem;
+    color: #1e497a;
+    margin-bottom: 1rem;
+}
+
+/* ======= TEXTO DEL TESTIMONIO ======= */
+.testimonial-content .quote {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* ======= AUTOR ======= */
+.author {
+    font-size: 1.2rem;
+    color: #003b73;
+    font-weight: bold;
+}
+
+/* ======= BOTONES DE NAVEGACIÓN ======= */
+.arrow {
+    background: #003b73;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.arrow:hover {
+    background: #0056b3;
+}
+
+.arrow-left {
+    left: 15px;
+}
+
+.arrow-right {
+    right: 15px;
+}
+
+/* ======= INDICADORES ======= */
+.indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.indicator.active {
+    background: #003b73;
+}
+
+
+@keyframes fadeOutLeft {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(-50px); }
+}
+
+@keyframes fadeOutRight {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(50px); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+
+/* ====== SECCIÓN TÍTULO "NUESTROS CURSOS" ====== */
+.courses-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #003b73;
+    margin-top: 6rem; /* Ajusta la separación desde el navbar */
+    margin-bottom: 2rem; /* Espaciado antes de los cursos */
+}

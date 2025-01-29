@@ -26,18 +26,18 @@
             <div class="nav-links-mobile">
                 <i class="fas fa-times close-icon"></i>
                 <a href="#home">Inicio</a>
-                <a href="#about">Nosotros</a>
+                <a href="nosotros.html">Nosotros</a>
                 <a href="#contact">Contacto</a>
-                <a href="platform/homeSchoolHome.html">Home School</a>
+                <a href="platform/homeSchoolHome.html">iHomeSchool</a>
                 <div class="mobile-footer">SkillBridge</div>
             </div>
             
             <!-- Links de navegación -->
             <ul class="nav-links">
                 <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Nosotros</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
                 <li><a href="#contact">Contacto</a></li>
-                <li><a href="platform/homeSchoolHome.html">Home School</a></li>
+                <li><a href="platform/homeSchoolHome.html">iHome School</a></li>
             </ul>
         </nav>
     </header>
@@ -50,18 +50,20 @@
         <div class="hero-content">
             <h1>Impulsa tu futuro con educación de calidad</h1>
             <p>Domina el inglés con nuestros cursos especializados y alcanza tus metas profesionales y personales.</p>
-            <a href="#courses" class="cta">
-                <i class="fas fa-arrow-right" style="color: #fff;"></i> Descubre Nuestros Cursos
+            <a href="cursos/ingles.html" class="cta">
+                <i class="fas fa-arrow-right"></i> Descubre nuestros cursos de inglés
             </a>
+            
         </div>
     </section>
 
     <!-- Cursos -->
     <section id="courses" class="courses">
-        <h2>Nuestros Cursos</h2>
+        <br><h2>Nuestros Cursos</h2>
         <div class="course-section">
+    
             <!-- Curso TOEFL -->
-            <div class="course-row">
+            <div class="course-row toefl">
                 <div class="course-image">
                     <img src="assets/images/image4.jpg" alt="Preparación para TOEFL">
                 </div>
@@ -75,16 +77,13 @@
                         <p><strong>Duración:</strong> 2 meses (8 semanas)</p>
                         <p><strong>Horas por semana:</strong> 4</p>
                         <p><strong>Inicio:</strong> Próximo grupo comienza el <span style="color: #1E497A;">01 de Marzo</span>.</p>
-                        <a href="#" class="btn" style="background-color: #1E90FF;">Más Información</a>
+                        <a href="cursos/ingles.html#promotion-toefl" class="btn toefl">Más Información</a>
                     </div>
                 </div>
             </div>
     
             <!-- Curso Básico -->
-            <div class="course-row reverse">
-                <div class="course-image">
-                    <img src="assets/images/image2.jpg" alt="Curso Básico">
-                </div>
+            <div class="course-row basic">
                 <div class="course-info">
                     <h3 style="color: #4CAF50;">Curso Básico</h3>
                     <p>Domina los fundamentos del idioma inglés, aprende gramática esencial, vocabulario práctico y habilidades básicas de comunicación.</p>
@@ -92,15 +91,16 @@
                         <p><i class="fas fa-check-circle" style="color: #4CAF50;"></i> Ideal para principiantes</p>
                         <p><i class="fas fa-check-circle" style="color: #4CAF50;"></i> 100% Clases presenciales</p>
                         <p><i class="fas fa-check-circle" style="color: #4CAF50;"></i> Acceso a materiales exclusivos</p>
-                        <!-- <p><strong>Duración:</strong> 3 meses (12 semanas)</p>
-                        <p><strong>Horas por semana:</strong> 5</p> -->
-                        <p class="highlight" style="color: #4CAF50;">Próximamente...</p>
+                        <a href="cursos/ingles.html#promotion-basic" class="btn basic">Más Información</a>
                     </div>
+                </div>
+                <div class="course-image">
+                    <img src="assets/images/image2.jpg" alt="Curso Básico">
                 </div>
             </div>
     
             <!-- Curso Intermedio -->
-            <div class="course-row">
+            <div class="course-row intermediate">
                 <div class="course-image">
                     <img src="assets/images/image3.jpg" alt="Curso Intermedio">
                 </div>
@@ -111,9 +111,7 @@
                         <p><i class="fas fa-check-circle" style="color: #FF5722;"></i> Nivel intermedio</p>
                         <p><i class="fas fa-check-circle" style="color: #FF5722;"></i> Grupos reducidos</p>
                         <p><i class="fas fa-check-circle" style="color: #FF5722;"></i> Actividades dinámicas</p>
-                        <!-- <p><strong>Duración:</strong> 4 meses (16 semanas)</p>
-                        <p><strong>Horas por semana:</strong> 6</p> -->
-                        <p class="highlight" style="color: #FF5722;">Próximamente...</p>
+                        <a href="cursos/ingles.html#promotion-intermediate" class="btn intermediate">Más Información</a>
                     </div>
                 </div>
             </div>
@@ -217,49 +215,56 @@
             </div>
         </div>
     </section>
-    
-    
 
-    <!-- Proximamente -->
-    <section id="promotion" class="promotion">
-        <div class="promotion-header">
-            <h2>
-                <span class="icon">
-                    <i class="fas fa-bullhorn"></i>
-                </span>
-                Próximamente...
-            </h2>
-        </div>
-        <div class="promotion-banner">
-            <h1><i class="fas fa-graduation-cap"></i> Curso Intensivo para TOEFL</h1>
-            <p>Alcanza tus metas con nuestra preparación especializada.</p>
+    <!-- SECCIÓN: TESTIMONIOS -->
+    <section id="testimonials" class="testimonials">
+        <h2>Lo Que Dicen Nuestros Estudiantes</h2>
+    
+        <div class="testimonial-container">
+            <button class="arrow arrow-left" aria-label="Anterior Testimonio">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+    
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="quote">"SkillBridge me ayudó a alcanzar mis metas en inglés. Su método es efectivo y práctico."</p>
+                        <div class="author">— Erick Guevara</div>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="quote">"Los cursos de SkillBridge son interactivos y me permitieron aprender inglés más rápido de lo que esperaba."</p>
+                        <div class="author">— María Fernández</div>
+                    </div>
+                </div>
+    
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="quote">"El ambiente y los profesores son excepcionales. ¡Recomiendo SkillBridge a todos!"</p>
+                        <div class="author">— Pedro Sánchez</div>
+                    </div>
+                </div>
+            </div>
+    
+            <button class="arrow arrow-right" aria-label="Siguiente Testimonio">
+                <i class="fas fa-chevron-right"></i>
+            </button>
         </div>
     
-        <div class="promotion-card">
-            <div class="promotion-content">
-                <div class="promotion-image">
-                    <img src="assets/images/image3.jpg" alt="Clase TOEFL">
-                </div>
-                <div class="promotion-details">
-                    <h2>Detalles del Curso</h2>
-                    <ul>
-                        <li><i class="fas fa-check-circle"></i> Clases PRESENCIALES</li>
-                        <li><i class="fas fa-check-circle"></i> Sabatino Intensivo</li>
-                        <li><i class="fas fa-check-circle"></i> Inicio: <strong>1 de Marzo 2025</strong></li>
-                    </ul>
-                    <p><strong>Duración:</strong> 2 meses</p>
-                    <p><strong>Inscripción:</strong> $2500 MXN por mes</p>
-                    <a href="tel:2211865562" class="cta-button"><i class="fas fa-phone-alt"></i> Inscríbete Ahora</a>
-                </div>
-            </div>
-            <div class="promotion-footer">
-                <p><i class="fas fa-exclamation-circle"></i> Cupo limitado, asegura tu lugar hoy.</p>
-            </div>
+        <div class="indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
         </div>
     </section>
     
 
-    <!-- Contacto -->
+    <!-- SECCIÓN: CONTACTO -->
     <section id="contact" class="contact">
         <h2>Contáctanos</h2>
         <div class="contact-wrapper">
@@ -276,29 +281,24 @@
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Carr. Federal Puebla - Atlixco 6503, Santa Fe, 72825 San Bernardino Tlaxcalancingo, Pue.</span>
+                    <span>Carr. Internacional 6503, San Bernardino Tlaxcalancingo, 72821 San Bernardino Tlaxcalancingo, Pue.</span>
                 </div>
                 <div class="social-media">
                     <h4>Síguenos:</h4>
-                    <a href="https://www.instagram.com/skillbridgeacademy" target="_blank">
+                    <a href="https://www.instagram.com/skillbridgeacademy.mx?igsh=b2FxenJ2NHQ3bWxp" target="_blank">
                         <i class="fab fa-instagram"></i> Instagram
                     </a>
                 </div>
             </div>
             <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d943.0239442495624!2d-98.25488731350113!3d19.015500802874957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfc77002091cd1%3A0x69a80a2082bdd34f!2sCarr.%20Federal%20Puebla%20-%20Atlixco%206503%2C%20Santa%20Fe%2C%2072825%20San%20Bernardino%20Tlaxcalancingo%2C%20Pue.!5e0!3m2!1ses-419!2smx!4v1737838566381!5m2!1ses-419!2smx" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.761672345082!2d-98.28060682497377!3d19.030220782164914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfb7a17faba387%3A0xcc753522ac580baf!2sMibomo%20Pets!5e0!3m2!1ses-419!2smx!4v1738091299022!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
+
     
-    <!-- Pie de página -->
+    
+    <!-- SECCIÓN: fOOTER -->
     <footer>
         <div class="footer-container">
             <!-- Sección Logo -->
@@ -313,14 +313,14 @@
                 <ul>
                     <li><i class="fas fa-phone-alt"></i> <a href="tel:+522211865562">+52 221 186 5562</a></li>
                     <li><i class="fas fa-envelope"></i> <a href="mailto:contacto@skillbridge.com">contacto@skillbridge.com</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> Carr. Federal Puebla - Atlixco 6503, Santa Fe, 72825 San Bernardino Tlaxcalancingo, Pue.</li>
+                    <li><i class="fas fa-map-marker-alt"></i>Carr. Internacional 6503, San Bernardino Tlaxcalancingo, 72821 San Bernardino Tlaxcalancingo, Pue.</li>
                 </ul>
             </div>
     
             <!-- Sección Síguenos -->
             <div class="footer-social">
                 <h3>Síguenos</h3>
-                <a href="https://www.instagram.com/skillbridgeacademy.mx/?utm_source=ig_web_button_share_sheet" target="_blank">
+                <a href="https://www.instagram.com/skillbridgeacademy.mx?igsh=b2FxenJ2NHQ3bWxp" target="_blank">
                     <i class="fab fa-instagram instagram-icon"></i> Instagram
                 </a>
             </div>
