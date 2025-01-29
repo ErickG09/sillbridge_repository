@@ -1263,3 +1263,214 @@ footer {
     margin-top: 6rem; /* Ajusta la separación desde el navbar */
     margin-bottom: 2rem; /* Espaciado antes de los cursos */
 }
+
+
+
+/* ==================================== */
+/* ====== ESTILOS RESPONSIVOS ====== */
+/* ==================================== */
+
+/* Dispositivos pequeños (teléfonos en vertical, 576px y menores) */
+@media (max-width: 576px) {
+    
+    /* Ajuste del navbar */
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-logo img {
+        width: 120px; /* Reducción del logo */
+    }
+
+    .nav-links {
+        display: none; /* Se oculta el menú de escritorio */
+    }
+
+    .hamburger {
+        display: flex; /* Activa el menú hamburguesa */
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Sección de cursos */
+    .course-section {
+        flex-direction: column;
+    }
+
+    .course-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .course-image {
+        flex: 0 0 100%;
+        height: auto;
+    }
+
+    .course-image img {
+        height: auto;
+    }
+
+    .course-info {
+        padding: 1.5rem;
+        text-align: center;
+    }
+
+    .course-info h3 {
+        font-size: 1.6rem;
+    }
+
+    /* Botones */
+    .course-info .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+
+    .footer-info ul {
+        text-align: center;
+    }
+}
+
+/* Dispositivos medianos (tabletas, 768px y menores) */
+@media (max-width: 768px) {
+
+    /* Ajuste del Navbar */
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        display: flex;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    /* Sección de cursos */
+    .course-section {
+        flex-direction: column;
+    }
+
+    .course-row {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .course-image {
+        flex: 0 0 100%;
+        height: auto;
+    }
+
+    .course-image img {
+        height: auto;
+    }
+
+    .course-info {
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .course-info h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Botones */
+    .course-info .btn {
+        display: block;
+        width: 100%;
+    }
+
+    /* Sección de testimonios */
+    .testimonials {
+        padding: 3rem 1rem;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial-slide {
+        padding: 1.5rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Dispositivos grandes (laptops y monitores, 1024px y menores) */
+@media (max-width: 1024px) {
+
+    /* Navbar */
+    .navbar {
+        padding: 1rem;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    /* Sección de cursos */
+    .course-row {
+        height: auto;
+    }
+
+    .course-info {
+        padding: 2rem;
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo img {
+        width: 50%;
+    }
+}
+
+/* ====== Ajustes Generales ====== */
+@media (max-width: 1200px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
