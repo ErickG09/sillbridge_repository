@@ -1,37 +1,54 @@
-/* Estilos globales */
+/* ================================ */
+/* == ÍNDICE DE CONTENIDOS CSS ==  */
+/* ================================ */
+/* 
+0. Estilos globales
+1. SECCIÓN 1
+2. SECCIÓN 2
+3. SECCIÓN 3
+4. SECCIÓN 4
+5. SECCIÓN 5
+6. SECCIÓN 6
+7. SECCIÓN 7
+8. Diseño responsivo
+*/
+
+/* ================================= */
+/* ====== 0. Estilos globales ====== */
+/* ================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #333;
     line-height: 1.6;
 }
 
-/* Header */
 .header {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow: hidden; /* Asegura que no haya espacios no deseados */
+    overflow: hidden; 
 }
 
-/* Navbar */
+/* ------ Navbar ----- */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: rgba(0, 0, 0, 0.7); /* Fondo translúcido */
+    background: rgba(0, 0, 0, 0.7); 
     color: #fff;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 100; /* Siempre encima */
-    font-family: 'Montserrat', sans-serif; /* Tipografía profesional */
+    z-index: 100; 
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .navbar-logo {
@@ -49,7 +66,7 @@ body {
     font-weight: bold;
 }
 
-/* Desktop Menu */
+/* Menú de escritorio */
 .nav-links {
     display: flex;
     list-style: none;
@@ -65,7 +82,6 @@ body {
     transition: color 0.3s ease;
 }
 
-/* Hover con subrayado */
 .nav-links a::before {
     content: '';
     position: absolute;
@@ -85,9 +101,9 @@ body {
     width: 100%;
 }
 
-/* Hamburger Menu */
+/* Menú de hamburguesa */
 .hamburger {
-    display: none; /* Oculto en escritorio */
+    display: none; 
     flex-direction: column;
     cursor: pointer;
     gap: 0.3rem;
@@ -101,7 +117,6 @@ body {
     transition: all 0.3s;
 }
 
-/* Efecto "X" */
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -114,9 +129,9 @@ body {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Mobile Menu */
+/* Menú para móviles */
 .nav-links-mobile {
-    display: none; /* Oculto por defecto */
+    display: none; 
     flex-direction: column;
     gap: 1.5rem;
     position: fixed;
@@ -129,11 +144,11 @@ body {
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
     z-index: 100;
     transition: right 0.3s ease;
-    font-family: 'Montserrat', sans-serif; /* Tipografía consistente */
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .nav-links-mobile.active {
-    right: 0; /* Desliza el menú */
+    right: 0; 
 }
 
 .nav-links-mobile a {
@@ -171,23 +186,26 @@ body {
 /* Responsive */
 @media screen and (max-width: 768px) {
     .nav-links {
-        display: none; /* Ocultar menú de escritorio */
+        display: none; 
     }
 
     .hamburger {
-        display: flex; /* Mostrar hamburguesa */
+        display: flex; 
     }
 
     .nav-links-mobile {
-        display: flex; /* Habilitar el menú móvil */
+        display: flex; 
     }
 }
 
+/* ================================= */
+/* ====== SECCIÓN 1: BIENVENIDA ====== */
+/* ================================= */
 
 /* Hero Section */
 .hero {
     position: relative;
-    height: 100vh; /* Altura completa del viewport */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -211,7 +229,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6); /* Oscurece la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0.6); 
     z-index: 1;
 }
 
@@ -237,64 +255,38 @@ body {
     align-items: center;
     justify-content: center;
     padding: 1rem 2rem;
-    background: linear-gradient(90deg, #007BFF, #0056b3); /* Degradado moderno */
+    background: linear-gradient(90deg, #007BFF, #0056b3); 
     color: #fff;
     font-size: 1.3rem;
     font-weight: bold;
     text-decoration: none;
-    border-radius: 50px; /* Bordes redondeados */
-    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); /* Sombra sutil */
+    border-radius: 50px; 
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); 
     transition: all 0.3s ease-in-out;
     position: relative;
     overflow: hidden;
 }
 
-/* Efecto hover */
 .hero .cta:hover {
     background: linear-gradient(90deg, #0056b3, #003b73);
     box-shadow: 0 6px 15px rgba(0, 86, 179, 0.4);
     transform: scale(1.05);
 }
 
-/* Ícono dentro del botón */
 .hero .cta i {
     margin-right: 0.5rem;
     font-size: 1.5rem;
     transition: transform 0.3s ease-in-out;
 }
 
-/* Animación de ícono al pasar el mouse */
 .hero .cta:hover i {
     transform: translateX(5px);
 }
 
+/* ================================= */
+/* ====== SECCIÓN 2: CURSOS ====== */
+/* ================================= */
 
-/* Cursos */
-
-.courses h2 {
-    font-size: 2.5rem; /* Manteniendo el tamaño */
-    text-align: center; /* Centrado */
-    color: #003B73; /* Azul oscuro profesional */
-    font-weight: bold;
-    margin-bottom: 2rem;
-    position: relative;
-    letter-spacing: 1px; /* Espaciado sutil */
-}
-
-/* Línea decorativa debajo del título */
-.courses h2::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 4px;
-    background: #007BFF; /* Azul más vibrante */
-    margin: 0.5rem auto;
-    border-radius: 2px;
-}
-
-
-
-/* ======== CONTENEDOR GENERAL ======== */
 .courses {
     background-color: #f9f9f9;
 }
@@ -304,29 +296,46 @@ body {
     flex-direction: column;
 }
 
-/* ======== CADA FILA DE CURSO ======== */
+.courses h2 {
+    font-size: 2.5rem; 
+    text-align: center; 
+    color: #003B73; 
+    font-weight: bold;
+    margin-bottom: 2rem;
+    position: relative;
+    letter-spacing: 1px; 
+}
+
+.courses h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #007BFF; 
+    margin: 0.5rem auto;
+    border-radius: 2px;
+}
+
 .course-row {
     display: flex;
     align-items: stretch;
     width: 100%;
-    height: 450px; /* Tamaño uniforme */
+    height: 450px; 
     overflow: hidden;
 }
 
-/* Alternar colores de fondo */
 .course-row.toefl {
-    background-color: #E3F2FD; /* Azul claro */
+    background-color: #E3F2FD; 
 }
 
 .course-row.basic {
-    background-color: #E8F5E9; /* Verde claro */
+    background-color: #E8F5E9; 
 }
 
 .course-row.intermediate {
-    background-color: #FFF3E0; /* Beige/naranja claro */
+    background-color: #FFF3E0; 
 }
 
-/* ======== IMÁGENES EN LOS COSTADOS ======== */
 .course-image {
     flex: 0 0 50%;
     height: 100%;
@@ -338,7 +347,6 @@ body {
     object-fit: cover;
 }
 
-/* ======== INFORMACIÓN DEL CURSO ======== */
 .course-info {
     flex: 1;
     display: flex;
@@ -348,14 +356,12 @@ body {
     border-radius: 10px;
 }
 
-/* TÍTULOS DE LOS CURSOS */
 .course-info h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 
-/* LISTA DE BENEFICIOS */
 .course-details {
     margin-top: 1rem;
 }
@@ -367,12 +373,10 @@ body {
     gap: 0.5rem;
 }
 
-/* ICONOS */
 .course-details i {
     font-size: 1.2rem;
 }
 
-/* BOTONES */
 .course-info .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -389,7 +393,6 @@ body {
     transform: scale(1.05);
 }
 
-/* COLORES DEL BOTÓN */
 .course-info .btn.toefl {
     background-color: #1E90FF;
 }
@@ -402,48 +405,45 @@ body {
     background-color: #FF5722;
 }
 
+/* ============================================ */
+/* ====== SECCIÓN 3: ¿POR QUÉ ELEGIRNOS? ====== */
+/* ============================================ */
 
-
-
-
-/* Estilo general para los GIFs */
 .why-us {
-    padding: 3rem 2rem; /* Espaciado superior e inferior */
+    padding: 3rem 2rem; 
     text-align: center;
 }
 
 .why-us h2 {
-    font-size: 2.5rem; /* Tamaño más grande del título principal */
+    font-size: 2.5rem; 
     margin-bottom: 2rem;
     color: #1e497a;
 }
 
-/* Contenedor general */
+
 .why-us-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Espaciado entre elementos */
-    justify-content: space-between; /* Acomoda los elementos en toda la pantalla */
-    padding: 0 2rem; /* Espacio en los extremos */
+    gap: 2rem; 
+    justify-content: space-between; 
+    padding: 0 2rem; 
 }
 
-/* Elementos individuales */
 .why-us-item {
-    flex: 1 1 30%; /* Los elementos ocupan un 30% del ancho */
+    flex: 1 1 30%; 
     text-align: center;
-    margin: 0 auto; /* Centra los elementos en pantallas más pequeñas */
+    margin: 0 auto; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 250px; /* Mantener consistencia de altura */
+    min-height: 250px; 
 }
 
-/* Iconos */
 .icon-container {
-    width: 80px; /* Ajuste genérico para el contenedor */
+    width: 80px; 
     height: 80px;
-    margin-bottom: 1rem; /* Espaciado entre el icono y el título */
+    margin-bottom: 1rem; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,17 +451,16 @@ body {
 
 .why-us-icon {
     display: block;
-    object-fit: contain; /* Ajustar el contenido sin distorsión */
+    object-fit: contain;
 }
 
-/* Estilo individual para cada GIF */
 .gif-progreso {
     width: 60px;
     height: auto;
 }
 
 .gif-ambiente {
-    width: 120px; /* Cambia este tamaño sin afectar el contenido inferior */
+    width: 120px;
     height: auto;
 }
 
@@ -470,10 +469,9 @@ body {
     height: auto;
 }
 
-/* Títulos */
 .why-us-item h3 {
-    font-size: 1.5rem; /* Tamaño aumentado para los títulos */
-    margin: 0.5rem 0; /* Espaciado entre títulos y textos */
+    font-size: 1.5rem; 
+    margin: 0.5rem 0; 
     font-weight: bold;
 }
 
@@ -489,15 +487,124 @@ body {
     color: #e77934 !important; /* Naranja */
 }
 
-/* Párrafos */
 .why-us-item p {
-    font-size: 1.1rem; /* Aumentar tamaño del texto */
-    color: #555; /* Color del texto */
-    line-height: 1.6; /* Mejor altura de línea */
-    margin: 0; /* Evita márgenes adicionales */
+    font-size: 1.1rem; 
+    color: #555; 
+    line-height: 1.6; 
+    margin: 0;
 }
 
-/* Contact Section */
+/* ================================= */
+/* ====== SECCIÓN 4: MÉTODO DE ENSEÑANZA ====== */
+/* ================================= */
+
+.method {
+    padding: 4rem 2rem;
+    background: linear-gradient(120deg, #f3f9ff, #eaf3ff); 
+    position: relative;
+    overflow: hidden;
+}
+
+.method::before,
+.method::after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    background: rgba(100, 150, 255, 0.3);
+}
+
+.method::before {
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: -100px;
+}
+
+.method::after {
+    width: 300px;
+    height: 300px;
+    bottom: -80px;
+    right: -120px;
+}
+
+.method-header {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.method-header h2 {
+    font-size: 2.5rem;
+    color: #1e497a;
+    margin-bottom: 1rem;
+}
+
+.method-header p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.method-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+.method-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 calc(33% - 2rem); 
+    max-width: 300px;
+    position: relative;
+}
+
+.method-feature .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.method-feature .text h3 {
+    font-size: 1.5rem;
+    color: #1e497a;
+    margin-bottom: 0.5rem;
+}
+
+.method-feature .text p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .method-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .method-feature {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ================================= */
+/* ====== SECCIÓN 6: CONTACTO ====== */
+/* ================================= */
 .contact {
     padding: 4rem 2rem;
     background: linear-gradient(180deg, #f4f9ff 0%, #ffffff 100%);
@@ -520,7 +627,6 @@ body {
     align-items: center;
 }
 
-/* Contact Details */
 .contact-details {
     text-align: left;
 }
@@ -564,7 +670,6 @@ body {
     color: #0056b3;
 }
 
-/* Social Media */
 .social-media {
     margin-top: 2rem;
 }
@@ -593,7 +698,6 @@ body {
     color: #c13584;
 }
 
-/* Map Container */
 .map-container {
     height: 400px;
     border-radius: 15px;
@@ -601,13 +705,12 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ================================= */
+/* ====== SECCIÓN 7: FOOTER ====== */
+/* ================================= */
 
-
-
-/* Footer */
-/* Footer */
 footer {
-    background: linear-gradient(145deg, #0b0f2e, #1a1e3f); /* Fondo azul oscuro degradado */
+    background: linear-gradient(145deg, #0b0f2e, #1a1e3f); 
     color: #fff;
     padding: 3rem 1rem;
 }
@@ -628,7 +731,7 @@ footer {
 }
 
 .footer-logo img {
-    width: 65%; /* Tamaño aumentado */
+    width: 50%;
     height: auto;
     margin-bottom: 1rem;
 }
@@ -705,7 +808,7 @@ footer {
 
 .footer-social i.instagram-icon {
     font-size: 1.5rem;
-    color: #E1306C; /* Color del logo de Instagram */
+    color: #E1306C; 
 }
 
 .footer-bottom {
@@ -715,120 +818,13 @@ footer {
     color: #d6e1f0;
 }
 
+/* ================================= */
+/* ====== SECCIÓN 7: CONTACTO ====== */
+/* ================================= */
 
 
 
-/* Métodos de enseñanza */
-.method {
-    padding: 4rem 2rem;
-    background: linear-gradient(120deg, #f3f9ff, #eaf3ff); /* Fondo con gradiente suave */
-    position: relative;
-    overflow: hidden;
-}
 
-/* Fondo decorativo con formas */
-.method::before,
-.method::after {
-    content: '';
-    position: absolute;
-    z-index: 0;
-    border-radius: 50%;
-    background: rgba(100, 150, 255, 0.3);
-}
-
-.method::before {
-    width: 250px;
-    height: 250px;
-    top: -50px;
-    left: -100px;
-}
-
-.method::after {
-    width: 300px;
-    height: 300px;
-    bottom: -80px;
-    right: -120px;
-}
-
-/* Encabezado */
-.method-header {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-}
-
-.method-header h2 {
-    font-size: 2.5rem;
-    color: #1e497a;
-    margin-bottom: 1rem;
-}
-
-.method-header p {
-    font-size: 1.2rem;
-    color: #555;
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-}
-
-/* Contenido */
-.method-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 2rem;
-    position: relative;
-    z-index: 1;
-}
-
-/* Elementos individuales */
-.method-feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    flex: 1 1 calc(33% - 2rem); /* Ajuste responsivo */
-    max-width: 300px;
-    position: relative;
-}
-
-/* Iconos */
-.method-feature .icon {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    color: #fff;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Textos */
-.method-feature .text h3 {
-    font-size: 1.5rem;
-    color: #1e497a;
-    margin-bottom: 0.5rem;
-}
-
-.method-feature .text p {
-    font-size: 1rem;
-    color: #555;
-    line-height: 1.5;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .method-content {
-        flex-direction: column;
-        align-items: center;
-    }
-    .method-feature {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
 
 
 
@@ -877,8 +873,93 @@ footer {
     color: #0077b5; /* Azul de LinkedIn */
 }
 
-/* Sección Promociones*/
-/* Curso Toefl */
+/* =============================== */
+/* ===== MEJORAS EN EL INICIO ===== */
+/* =============================== */
+.courses-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #003b73;
+    margin-top: 7rem; /* Espaciado para evitar solapamiento con el navbar */
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+/* Agregar líneas curvas de fondo */
+.courses-title::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: url("../assets/images/curved-lines.svg") no-repeat center;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+/* =============================== */
+/* ===== SECCIÓN DE PROMOCIÓN ===== */
+/* =============================== */
+.promotion-discount {
+    background: linear-gradient(90deg, #003B73, #007BFF);
+    color: white;
+    text-align: center;
+    padding: 3rem 1rem;
+    margin: 3rem 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.promotion-discount h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.promotion-discount p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.price-comparison {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.price-old {
+    font-size: 2rem;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.price-new {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+.cta-button-promo {
+    display: inline-block;
+    background: #FFD700;
+    color: #003B73;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button-promo:hover {
+    background: #FFC107;
+    transform: scale(1.05);
+}
+
 
 /* Estilos generales para todas las secciones de promoción */
 .promotion-header {
@@ -1081,7 +1162,7 @@ footer {
 .promotion-intermediate .promotion-footer {
     background: #D35400;
     color: #fff;
-}
+} */
 
 
 
@@ -1091,6 +1172,28 @@ footer {
     background: linear-gradient(to bottom, #E3F2FD, #E1E9F7);
     text-align: center;
     position: relative;
+}
+
+.testimonials h2 {
+    font-size: 3rem;
+    color: #003b73;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Agregar un subrayado animado al título */
+.testimonials h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: #007BFF;
+    margin: 0.5rem auto;
+    border-radius: 2px;
+    transition: width 0.3s ease-in-out;
 }
 
 /* ======= TÍTULO ======= */
