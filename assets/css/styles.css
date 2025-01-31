@@ -1175,26 +1175,25 @@ footer {
 }
 
 .testimonials h2 {
-    font-size: 3rem;
-    color: #003b73;
-    font-weight: bold;
-    text-transform: capitalize;
-    margin-bottom: 3rem;
+    text-align: center; /* Centra el título */
+    font-size: 2rem; /* Reduce el tamaño */
+    font-weight: bold; /* Mantiene presencia */
+    color: #003b73; /* Azul oscuro */
+    margin-bottom: 1rem; /* Espaciado controlado */
     position: relative;
-    display: inline-block;
 }
 
-/* Agregar un subrayado animado al título */
+/* Línea decorativa debajo del título */
 .testimonials h2::after {
     content: "";
     display: block;
-    width: 100px;
-    height: 4px;
-    background: #007BFF;
-    margin: 0.5rem auto;
-    border-radius: 2px;
-    transition: width 0.3s ease-in-out;
+    width: 80px; /* Longitud de la línea */
+    height: 3px; /* Grosor */
+    background: #007BFF; /* Azul vibrante */
+    margin: 0.5rem auto; /* Centrado */
+    border-radius: 5px;
 }
+
 
 /* ======= TÍTULO ======= */
 .testimonials h2 {
