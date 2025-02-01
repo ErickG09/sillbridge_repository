@@ -1367,6 +1367,158 @@ footer {
 }
 
 
+/* =============================== */
+/* ===== SECCIÓN DE CURSOS DE INGLÉS ===== */
+/* =============================== */
+
+.cursos-ingles {
+    background: #E8F5E9; /* Verde claro */
+    padding: 4rem 1rem;
+    text-align: center;
+    border-radius: 15px;
+    margin: 3rem 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cursos-banner {
+    background: linear-gradient(90deg, #1E5631, #2E7D32);
+    color: white;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.cursos-banner h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.cursos-banner p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Contenedor del contenido */
+.cursos-card {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #C8E6C9;
+}
+
+/* Contenido del texto */
+.cursos-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cursos-text {
+    flex: 1;
+    text-align: left;
+}
+
+.cursos-text h2 {
+    color: #1E5631;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.cursos-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+}
+
+.cursos-text ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.cursos-text ul li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.cursos-text ul li i {
+    color: #2E7D32;
+    margin-right: 0.5rem;
+}
+
+/* Imagen */
+.cursos-image {
+    flex: 1;
+}
+
+.cursos-image img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+/* Botón CTA */
+.cta-button-green {
+    display: inline-block;
+    background: #2E7D32;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cta-button-green:hover {
+    background: #1E5631;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cursos-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cursos-text {
+        text-align: center;
+    }
+
+    .cursos-image {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.cta-button-green {
+    display: inline-flex;  /* Hace que el botón y el ícono se alineen correctamente */
+    align-items: center;  /* Alinea el ícono con el texto */
+    gap: 10px;  /* Espaciado automático entre el ícono y el texto */
+    background: #4CAF50;  /* Color verde */
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button-green i {
+    font-size: 1.5rem;
+}
+
+
 
 /* ==================================== */
 /* ====== ESTILOS RESPONSIVOS ====== */
